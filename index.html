@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<meta charset=utf-8>
+<title>CSS 3D Scene Editor</title>
+<meta name=apple-mobile-web-app-capable content=yes>
+<meta name=apple-mobile-web-app-status-bar-style content=black>
+<meta name=viewport content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+<link rel=stylesheet href=style.css>
+<input id=toggle type=checkbox accesskey=s>
+
+<label for=toggle>=</label>
+
+<header>
+  <input type=button value="🡑"id="camera_front">
+  <input type=button value="🡓"id="camera_back">
+  <input type=button value="🡐"id="camera_left">
+  <input type=button value="🡒"id="camera_right">
+  <input type=button value="🡅"id="camera_up">
+  <input type=button value="🡇"id="camera_down">
+  <input type=button value="↻" id="camera_ccw">
+  <input type=button value="↺" id="camera_cw">
+  <label>
+    <span>Perspective</span>
+    <input id="perspective" type=range min=100 max=6000 step=1 value=900>
+  </label>
+</header>
+
+<aside>
+  <div>
+    <span>Add</span>
+    <input type=button value=Plane>
+    <input type=button value=Sprite>
+    <input type=button value=Cube>
+  </div>
+  <div>
+    <span>Edit</span>
+    <label>
+      <span>W</span>
+      <input type=number name=w min=0 value=0>
+    </label>
+    <label>
+      <span>H</span>
+      <input type=number name=h min=0 value=0>
+    </label>
+  </div>
+  <div id=texture>
+    <span>Texture</span>
+    <div class="texture_container">
+      <img src="tileset.png">
+      <div class="texture_highlight"></div>
+    </div>
+  </div>
+  <label>
+    <span>Color</span>
+    <input type=color value=#ffffff>
+  </label>
+  <label>
+    <span>X</span>
+    <input type=number name=x value=0>
+  </label>
+  <label>
+    <span>Y</span>
+    <input type=number name=y value=0>
+  </label>
+  <label>
+    <span>Z</span>
+    <input type=number name=z value=0>
+  </label>
+  <label>
+    <span>rot X</span>
+    <input type=number name=rx value=0>
+  </label>
+  <label>
+    <span>rot Y</span>
+    <input type=number name=ry value=0>
+  </label>
+  <label>
+    <span>rot Z</span>
+    <input type=number name=rz value=0>
+  </label>
+</aside>
+
+<main id="main">
+  <div id="center">
+    <div id="scene">
+      <div id="grid"></div>
+    </div>
+  </div>
+</main>
+
+<script src="script.js"></script>
