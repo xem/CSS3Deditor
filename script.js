@@ -1,5 +1,5 @@
 // Camera position / rotation / perspective
-camera_x = camera_y = -5000;
+camera_x = camera_y = 0;
 camera_z = 0;
 camera_angle_z = 0;
 
@@ -44,7 +44,7 @@ camera_ccw.onclick = function(){
 }
 
 update_camera = function(){
-  scene.style.transform = "translateX(" + camera_x + "px) translateY(" + camera_y + "px)  rotateX(60deg) translateZ(" + camera_z + "px) rotateZ(" + camera_angle_z + "rad)";
+  scene.style.transform = "translateX(" + camera_x + "px) translateY(" + camera_y + "px) translateZ(" + camera_z + "px) rotateZ(" + camera_angle_z + "rad)";
 }
 
 perspective.onchange = perspective.oninput = function(){
