@@ -47,6 +47,11 @@ update_camera = function(){
   scene.style.transform = "translateX(" + camera_x + "px) translateY(" + camera_y + "px) translateZ(" + camera_z + "px) rotateZ(" + camera_angle_z + "rad)";
 }
 
-perspective.onchange = perspective.oninput = function(){
-  main.style.perspective = perspective.value + "px";
+onload = perspective.onchange = perspective.oninput = function(){
+  if(perspective.value < 150) {
+    main.style.perspective = "100000px";
+  }
+  else {
+    main.style.perspective = (5400 - perspective.value) + "px";
+  }
 }

@@ -3,9 +3,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transform-style: preserve-3d;
   font-kerning: auto;
   outline: none;
+  transform-style: preserve-3d;
 }
 ::-moz-selection {
   color: white;
