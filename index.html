@@ -27,19 +27,23 @@
 <aside>
   <div>
     <span>Add</span>
-    <input type=button value=Plane>
-    <input type=button value=Sprite>
-    <input type=button value=Cube>
+    <input type=button value=Plane id=plane>
+    <input type=button value=Sprite id=plane>
+    <input type=button value=Cube id=plane>
   </div>
   <div>
     <span>Edit</span>
     <label>
-      <span>W</span>
-      <input type=number name=w min=0 value=0>
+      <span>id</span>
+      <input type=text name=id min=0 value='' id=id>
     </label>
     <label>
-      <span>H</span>
-      <input type=number name=h min=0 value=0>
+      <span>Width</span>
+      <input type=number name=w min=0 value=0 id=w step=10>
+    </label>
+    <label>
+      <span>Height</span>
+      <input type=number name=h min=0 value=0 id=h step=10>
     </label>
   </div>
   <div id=texture>
@@ -54,28 +58,28 @@
     <input type=color value=#ffffff>
   </label>
   <label>
-    <span>X</span>
-    <input type=number name=x value=0>
+    <span>Pos X</span>
+    <input type=number name=x value=0 id=posX step=10>
   </label>
   <label>
-    <span>Y</span>
-    <input type=number name=y value=0>
+    <span>Pos Y</span>
+    <input type=number name=y value=0 id=posY step=10>
   </label>
   <label>
-    <span>Z</span>
-    <input type=number name=z value=0>
+    <span>Pos Z</span>
+    <input type=number name=z value=0 id=posZ step=10>
   </label>
   <label>
-    <span>rot X</span>
-    <input type=number name=rx value=0>
+    <span>Rot X</span>
+    <input type=number name=rx value=0 id=rotX step=0.1>
   </label>
   <label>
-    <span>rot Y</span>
-    <input type=number name=ry value=0>
+    <span>Rot Y</span>
+    <input type=number name=ry value=0 id=rotY step=0.1>
   </label>
   <label>
-    <span>rot Z</span>
-    <input type=number name=rz value=0>
+    <span>Rot Z</span>
+    <input type=number name=rz value=0 id=rotZ step=0.1>
   </label>
 </aside>
 

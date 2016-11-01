@@ -180,22 +180,22 @@ main {
   height: 1px;
 }
 #scene_perspective {
-  width: 10000px;
-  height: 10000px;
+  width: 1px;
+  height: 1px;
   transform-origin: 50% 50%;
-  transform: translateX(-5000px) translateY(-5000px) rotateX(60deg);
+  transform: translateX(0px) translateY(0px) rotateX(60deg);
 }
 #scene {
-  width: 10000px;
-  height: 10000px;
+  width: 1px;
+  height: 1px;
   transition: transform .25s;
 }
 #grid {
   width: 803px;
   height: 803px;
-  top: 5000px;
-  left: 5000px;
-  background-image: linear-gradient(#ccc 3px, transparent 3px), linear-gradient(90deg, #ccc 3px, transparent 3px);
+  top: 0px;
+  left: 0px;
+  background-image: linear-gradient(#ccc 4px, transparent 4px), linear-gradient(90deg, #ccc 4px, transparent 4px);
   background-size:100px 100px, 100px 100px;
   transform-origin: center center;
   transform: translateX(-50%) translateY(-50%); 
@@ -213,6 +213,14 @@ main {
   top: 0;
   left: 0;
 }
+
+
+.plane.selected {
+  outline: 4px solid red;
+}
+
+
+
 @media (min-width: 600px) {
   header label {
     display: inline-block;
