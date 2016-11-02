@@ -219,6 +219,10 @@ main {
   outline: 4px solid red;
 }
 
+.sprite {
+  transition: transform .25s;
+}
+
 
 
 @media (min-width: 600px) {
